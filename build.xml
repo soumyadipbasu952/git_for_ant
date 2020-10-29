@@ -1,0 +1,26 @@
+
+
+<project name="testing" default="Builds">
+
+<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  
+
+
+<target name="Builds">
+
+<property name="Files" value="D:\Apache_ant\All Builds"/>
+  <foreach target="execute" param="theFile">
+    <fileset dir="${Files}" casesensitive="yes">
+      <include name="**/*.xml"/>
+      
+    </fileset>
+  </foreach>
+</target>
+
+<target name="execute" >
+  <ant antfile="${theFile}"/>
+  
+</target>
+
+
+</project>
