@@ -4,7 +4,7 @@
 <property name="IAR_Name_Activation" Value ="CALCULATOR_1603190753%7C01.00.0000"/>
 <property name="IAR_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\DemoAnt\CALCULATOR_1603190753_01.00.0000.iar"/>
 <property name="JSON_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\DemoAnt\update.json"/>
-<property name="JSON_Location_Connection" Value ="C:\Users\10657390\Desktop\AnkitaWantsToRun-main\AnkitaWantsToRun-main\Connection\UpdateConnection_CALCI.json"/>
+<property name="JSON_Location_Connection" Value ="C:\Users\10657390\Desktop\AnkitaWantsToRun-main\AnkitaWantsToRun-main\Jar\bin\Properties\UpdateConnection_CALCI.json"/>
 
 <target name="Import">
 <exec executable="curl">
