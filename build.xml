@@ -8,7 +8,7 @@
 
 <target name="Builds">
 
-<property name="Files" value="C:\Users\10657390\Desktop\AnkitaWantsToRun-main\AnkitaWantsToRun-main\Jar\bin\Projects"/>
+<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\DemoAnt"/>
   <foreach target="execute" param="theFile">
     <fileset dir="${Files}" casesensitive="yes">
       <include name="**/*.xml"/>
