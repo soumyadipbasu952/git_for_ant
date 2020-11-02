@@ -3,9 +3,9 @@
 <property name="IAR_Name" Value ="LOOKUP_SERVICE_COUNTRYI_SB_01.00.0000.iar"/>
 <property name="IAR_Name_Activation" Value ="LOOKUP_SERVICE_COUNTRYI_SB%7C01.00.0000"/>
 <property name="IAR_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\LOOKUP_SERVICE_COUNTRYI_SB_01.00.0000.iar"/>
-<property name="JSON_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\update.json"/>
-<property name="JSON_Location_Connection" Value ="D:\Apache_ant\Connection\UpdateConnection_LKUP.json"/>
-<property name="JSON_Location_UpdateDVM" Value ="D:\Apache_ant\UpdateLookUp\Update_LookUp.json"/>
+<property name="JSON_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\update.json"/>
+<property name="JSON_Location_Connection" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\UpdateConnection_LKUP.json"/>
+
 
 
 
