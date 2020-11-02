@@ -1,0 +1,16 @@
+{
+ "dependencies": {
+        "connections": [
+            {
+                "id": "REST_DEVOPS_DEMO",
+                "name": "Rest_Devops_Demo",
+                "role": "SOURCE",
+                "status": "CONFIGURED",
+                "type": "rest"
+                
+            }
+        ]
+    }
+                
+ }          
+              

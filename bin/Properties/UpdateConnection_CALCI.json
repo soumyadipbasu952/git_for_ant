@@ -1,0 +1,16 @@
+{
+ "dependencies": {
+        "connections": [
+            {
+                "id": "REST_API_CONN1",
+                "name": "REST_API_Conn1",
+                "role": "SOURCE",
+                "status": "CONFIGURED",
+                "type": "rest"
+                
+            }
+        ]
+    }
+                
+ }          
+              

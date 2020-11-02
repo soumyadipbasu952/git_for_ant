@@ -1,0 +1,13 @@
+{"dependencies": {
+        "connections": [
+            {
+                "id": "FTP_CONN",
+                "name": "FTP_Conn",
+                "role": "SOURCE_AND_TARGET",
+                "status": "CONFIGURED",
+                "type": "ftp"
+                
+            }
+        ]
+    }
+	}
