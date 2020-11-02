@@ -8,7 +8,7 @@
 
 <target name="Builds">
 
-<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\DemoAnt"/>
+<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport"/>
   <foreach target="execute" param="theFile">
     <fileset dir="${Files}" casesensitive="yes">
       <include name="**/*.xml"/>
