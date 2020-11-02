@@ -2,28 +2,28 @@
 
 <property name="IAR_Name" Value ="EMP_NOTIFICATI_1603344066_01.00.0000.iar"/>
 <property name="IAR_Name_Activation" Value ="EMP_NOTIFICATI_1603344066%7C01.00.0000"/>
-<property name="IAR_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\DemoAnt\EMP_NOTIFICATI_1603344066_01.00.0000.iar"/>
-<property name="JSON_Location" Value ="C:\Users\10657390\Desktop\AnkitaWantsToRun-main\AnkitaWantsToRun-main\Jar\bin\Properties\update.json"/>
-<property name="JSON_Location_Connection" Value ="C:\Users\10657390\Desktop\AnkitaWantsToRun-main\AnkitaWantsToRun-main\Jar\bin\Properties\UpdateConnection_EMP.json"/>
+<property name="IAR_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\EMP_NOTIFICATI_1603344066_01.00.0000.iar"/>
+<property name="JSON_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\update.json"/>
+<property name="JSON_Location_Connection" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\UpdateConnection_EMP.json"/>
 
 <target name="Import">
 <exec executable="curl">
 
-<arg line="curl -X POST -u ankita.deulkar@lntinfotech.com:Asdfghjkl@2020 -H Accept:application/json -F file=@${IAR_Location} -F type=application/octet-stream https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive"/>
+<arg line="curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Accept:application/json -F file=@${IAR_Location} -F type=application/octet-stream https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive"/>
 </exec>
 </target>
 
 
 <target name="Activate" depends="UpdateConnection">
 <exec executable="curl">
- <arg line = "curl -X POST -u ankita.deulkar@lntinfotech.com:Asdfghjkl@2020 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}"
+ <arg line = "curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}"
 />
 </exec>
 </target>
 
 <target name="UpdateConnection" depends="Import">
 <exec executable="curl">
- <arg line = "curl -X POST -u ankita.deulkar@lntinfotech.com:Asdfghjkl@2020 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location_Connection} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}
+ <arg line = "curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location_Connection} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}
 "
 />
 </exec>
