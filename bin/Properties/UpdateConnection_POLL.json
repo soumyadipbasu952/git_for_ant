@@ -1,8 +1,8 @@
 {"dependencies": {
         "connections": [
             {
-                "id": "FTP_CONN",
-                "name": "FTP_DEVOPS_DEMO",
+                "id": "FTP_DEVOPS_DEMO",
+                "name": "FTP_DevOps_Demo",
                 "role": "SOURCE_AND_TARGET",
                 "status": "CONFIGURED",
                 "type": "ftp"
