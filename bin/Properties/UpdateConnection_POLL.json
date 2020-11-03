@@ -2,7 +2,7 @@
         "connections": [
             {
                 "id": "FTP_CONN",
-                "name": "FTP_Conn",
+                "name": "FTP_DEVOPS_DEMO",
                 "role": "SOURCE_AND_TARGET",
                 "status": "CONFIGURED",
                 "type": "ftp"
