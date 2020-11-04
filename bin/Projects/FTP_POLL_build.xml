@@ -1,7 +1,7 @@
 <project name="testing" default="Activate">
  
 
-<property file = "FTP_POLL.properties"/> 
+<propertyfile file = "FTP_POLL.properties"/> 
 
 <target name="Import">
 <exec executable="curl">
