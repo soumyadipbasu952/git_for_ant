@@ -1,13 +1,7 @@
 <project name="testing" default="Activate">
 
-<property name="IAR_Name" Value ="CALCULATOR_1603190753_01.00.0000.iar"/>
-<property name="IAR_Name_Activation" Value ="CALCULATOR_1603190753%7C01.00.0000"/>
-<property name="IAR_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\CALCULATOR_1603190753_01.00.0000.iar"/>
-<property name="JSON_Location" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\update.json"/>
-<property name="JSON_Location_Connection" Value ="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Properties\UpdateConnection_CALCI.json"/>
-
-
-<target name="Import">
+<propertyfile file=Calculator.properties>
+ 
 <exec executable="curl">
 
 <arg line="curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Accept:application/json -F file=@${IAR_Location} -F type=application/octet-stream https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive"/>
