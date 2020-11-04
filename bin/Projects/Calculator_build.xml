@@ -1,6 +1,6 @@
 <project name="testing" default="Activate">
 
-<propertyfile file="Calculator.properties">
+<propertyfile file="Calculator.properties"/>
  
 <exec executable="curl">
 
