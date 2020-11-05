@@ -2,8 +2,8 @@
  "dependencies": {
         "connections": [
             {
-                "id": "REST_API_CONN1",
-                "name": "REST_API_Conn1",
+                "id": "REST_DEVOPS_DEMO",
+                "name": "Rest_Devops_Demo",
                 "role": "SOURCE",
                 "status": "CONFIGURED",
                 "type": "rest"
