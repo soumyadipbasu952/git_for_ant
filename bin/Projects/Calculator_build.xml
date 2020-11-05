@@ -10,12 +10,14 @@
 </target>
 
 
-<target name="Activate" depends="UpdateConnection">
+<target name="Activate" depends="Import">
 <exec executable="curl">
  <arg line = "curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}"
 />
 </exec>
 </target>
+ 
+ <!--
 
 <target name="UpdateConnection" depends="Import">
 <exec executable="curl">
@@ -23,5 +25,6 @@
 />
 </exec>
 </target>
+-->
 
 </project>
